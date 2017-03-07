@@ -1,0 +1,96 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #F2F1F0;
+}
+
+.swiper-container{
+	height: 230px;
+	width: 100%;
+	position: relative;
+}
+.swiper-container img{
+	height: 100%;
+}
+.pag{
+	height: 12%;
+	width: 50%;
+	position: absolute;
+	left: 6%;
+	bottom: 2%;
+}
+.box{
+	width: 94%;
+	margin: 15px 10px;
+	background-color: white;
+	color: #5b5b5b;
+	font-size: 14px;
+	font-family: "微软雅黑";
+    box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+ 
+
+}
+.box h3{
+	width: 100%;
+	background-color: #133F24;
+	padding: 6px 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: white;
+}
+.content{
+	   padding-bottom: 20px;
+}
+.box p{
+	width: 94%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.box p:nth-of-type(2) img{
+	width: 100%;
+}
+.zhenzhao{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-color: black;
+}
+.mask{
+    position: fixed;
+    height: 40%;
+    width: 100%;
+    top: 50%;
+    background-color:white;
+    z-index: 3;
+    margin-top: -20%;
+
+}
+.two{
+	width: 100%;
+	height: 100%;
+}
+.two img{
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.fade{
+	top:0;
+	height: 100%;
+	width: 100%;
+}
+/*  .two .po{
+	position: absolute;
+   height:100%; 
+   width: 100%;
+   left: 50%;
+   top:50%;
+   margin-top: -50%;
+   margin-left: 50%;
+} */

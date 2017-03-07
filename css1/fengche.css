@@ -1,0 +1,81 @@
+/*通过div的名称，筛选到div,对其进行样式设置*/
+.fengche{
+    /*设置div的宽度，单位是px（像素）*/
+    /*注意输入法一定要是英文，特别是标点符号。*/
+    width: 100%;
+    height:180px;
+    /*设置背景色*/
+    /*background-color: red;*/
+    /*设计背景图片.url()来根据一定的文件路径*/
+    background-image: url(../img/caodi.png);
+    /*设置背景的尺寸，contain:包含。会根据元素的大小自动调整，使背景图片适应元素的尺寸。*/
+    background-size: contain;
+    /*设置定位类型为相对定位
+    relative:相对；
+    position: 位置*/
+    /*相对定位relative：相对于元素原来的位置进行定位*/
+    position: relative;
+    /*设置距离原来的位置上边移动100px*/
+    /*距离原来的位置左边也移动100px。数值可正可负。正：向右、向下。负：向左、向上。*/
+    bottom: 0px;
+
+    background-repeat: no-repeat;
+}
+/*筛选父元素下面的所有子元素div,第一个是父元素，第二个后代元素，父元素和后代元素中间是空格*/
+/*第一个风车*/
+.fengche div{
+    /*background-color: orange;*/
+    /*width: 300px;*/
+    /*height: 300px;*/
+    background-image: url(../img/fengche.png);
+    /*设置背景重复
+    假如图片过大，显示不完，过小，会自动重复，布满整个背景。
+    设置背景不重复。*/
+    /*background-repeat: no-repeat;*/
+    /*设置定位类型为绝对定位,设置绝对位置，相对于父元素进行定位*/
+    position: absolute;
+    /*设置子元素的左边距离父元素的左边100像素。（即子元素的top，right，bottom，left距离父元素的top，right，bottom，left多少像素。）*/
+    /*left: 140px;
+    top: 100px;*/
+    /*设置要执行的动画名称*/
+    animation-name: rotate;
+    /*animation-duration:2s;*/
+    animation-iteration-count: infinite;
+    /*设置动画的频率，系统默认设置的慢进慢出
+    linear:匀速*/
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+}
+/*div:nth-child(1)表达的意思是筛选第几个div.*/
+.fengche div:nth-child(1){
+    width: 300px;
+    height: 300px;
+    left: 140px;
+    top: 90px;
+    animation-duration:2s;
+}
+.fengche div:nth-child(2){
+    width: 200px;
+    height: 200px;
+    left: 413px;
+    top: 248px;
+    animation-duration:4s;
+}
+.fengche div:nth-child(3){
+    width: 250px;
+    height: 250px;
+    left: 580px;
+    top: 180px;
+    animation-duration:3s;
+}
+/*设置一个动画过程:从0度旋转360度@keyframes动画类型,notate是我们为动画起的名字*/
+@keyframes rotate{
+    0%{
+        /*旋转动画，让风车旋转.routate:旋转。deg:degree度*/
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*设置三个风车，鼠标悬停时的效果*/

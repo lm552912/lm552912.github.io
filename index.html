@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <title>刘美作品</title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            padding:0;
+            margin: 0;
+        }
+        .box{
+            height:98%;
+            width: 98%;
+            background-size: 100% 100%;
+            background-image: url(aa.png);
+            background-repeat: no-repeat;
+            padding: 1%;
+        }
+      a{
+            display: block;
+            line-height: 50px;
+            width: 70%;
+            background-color: #8bfe59;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            position: absolute;
+          left: 50%;
+          margin-left: -35%;
+          transform-style:preserve-3d;
+          perspective: 420px;
+          -webkit-perspective: 420px;
+
+        }
+        .content a:nth-of-type(1){
+            top:0
+        }
+        .content a:nth-of-type(2){
+           bottom:0
+        }
+        .content{
+          position: relative;
+            top:27%;
+            height:30%;
+        }
+        i{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            transform: translateZ(0px);
+            animation: z 2s linear infinite;
+            -webkit-animation: z 2s linear infinite;
+        }
+        .shou{
+            font-size: 24px;
+        }
+        @keyframes z {
+            0%{
+                transform: translateZ(0px);
+            }
+            50%{
+                transform: translateZ(100px);
+            }
+            100%{
+                transform: translateZ(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="content">
+        <a href="index1.html">
+            作品1
+            <i class="fa fa-hand-pointer-o shou"></i>
+        </a>
+        <a href="index2.html">作品2
+            <i class="fa fa-hand-pointer-o shou"></i>
+        </a>
+    </div>
+
+</div>
+</body>
+</html>

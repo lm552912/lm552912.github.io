@@ -1,0 +1,29 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	margin:0;
+	padding: 0;
+	position: relative;
+}
+.swiper-container{
+	height: 100%;
+	width: 100%;
+}
+.wrap{
+	height: 88%;
+}
+.swiper-slide{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.first{
+	background-image: url(../images/peitao1.jpg);
+}
+.second{
+	background-image: url(../images/peitao2.jpg);
+}
+.third{
+	background-image: url(../images/peitao3.jpg);
+}

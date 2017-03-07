@@ -1,0 +1,83 @@
+<?php
+header("content-type:text/html;charset=utf-8");
+?>
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/rexiao.css">
+	<title>热销项目</title>	
+</head>
+<body>
+<div class="zhenzhao" style="display: none"></div>
+<div class="mask" style="display: none">
+	<div class="swiper-container two">
+		  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="images/shejitu.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/shejitu.jpg" alt=""></div>
+    
+  </div>
+	</div>
+</div>
+<div class="swiper-container one">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="images/lunbo1.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/lunbo2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="images/lunbo2.jpg" alt=""></div>
+  </div>
+  <div class="pag"><div class="swiper-pagination"></div></div>
+</div>
+<div class="box">
+	<h3>c1-c2户型</h3>
+	<div class="content">
+		<p>百平米空间三房格局，皆带景观飘窗，每个角度都有各自的美；7.3米大面宽豪华客厅，连通景观阳台，清风入户阵阵花香；动线规划合理布局，户型方正实用，美的空间，一切刚好；南北对流。任自然之风穿梭于此，超大采光面，让阳关照进生活。</p>
+		<p><img src="images/shejitu.jpg" alt=""></p>
+		<p><strong>点击图片放大</strong></p>
+	</div>
+</div>
+<div class="box">
+	<h3>c1-c2户型</h3>
+	<div class="content">
+		<p>百平米空间三房格局，皆带景观飘窗，每个角度都有各自的美；7.3米大面宽豪华客厅，连通景观阳台，清风入户阵阵花香；动线规划合理布局，户型方正实用，美的空间，一切刚好；南北对流。任自然之风穿梭于此，超大采光面，让阳关照进生活。</p>
+		<p><img src="images/shejitu.jpg" alt=""></p>
+		<p><strong>点击图片放大</strong></p>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>	
+<script type="text/javascript" src="js/swiper-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<script>
+	
+	var swiper = new Swiper('.one', {
+	autoplay: 3000,//可选选项，自动滑动
+	loop:true,
+	pagination : '.swiper-pagination',
+	onInit: function(swiper){    
+    }
+   
+})
+   	
+$('.content img').click(function(){
+   	$('.zhenzhao').fadeIn();
+    $('.mask').fadeIn();
+    var mySwiper = new Swiper('.two', {	
+})
+})
+
+/*$('.two img').get(0).ondblclick=function(){
+	console.log(0)
+	$('.mask').css({height:'100%'})
+}*/
+
+/*$('.two img').click(function(){
+	$('.mask').addClass('fade');
+	$('.mask img').addClass('po')
+})	*/
+</script>	
+</body>
+</html>

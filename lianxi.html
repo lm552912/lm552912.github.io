@@ -1,0 +1,149 @@
+<?php
+header("content-type:text/html;charset=utf-8");
+?>
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+<style>
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+.swiper-container{
+	height: 100%;
+	width: 100%;
+}
+.last{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(images/bg9.jpg);
+}
+	.last-logo{
+	height: 66px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 41px;
+}
+.last-logo img{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+}
+.last-t{
+	height: 28px;
+	text-align: center;
+	margin-top: 60px;
+}
+.last-t img{
+	height: 100%;
+}
+.erweima{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	 opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(1.5, 1.5);
+}
+.erweima img{
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+.erweima img:nth-of-type(2){
+	margin-top: 3px;
+}
+
+.dizhi{
+	width: 100%;
+	margin-top: 30px;
+}
+.dizhi img{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+.tel{
+	width: 100%;
+	margin-top: 10px;
+}
+.tel img{
+	display: block;
+    width: 50%;
+	margin: 0 auto;
+}
+.rotate4{
+	 transform-style: preserve-3d;
+	 animation:scale1 2s linear 0.5s forwards;
+}
+@keyframes scale1{
+	0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(1.5, 1.5);   
+}
+
+100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    }
+
+}
+
+</style>
+	<title>联系我们</title>	
+</head>
+<body>
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">   
+    <div class="swiper-slide last">
+    <div class="last-logo ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.2s">
+      <img src="images/p9log.png" alt="">
+    </div>
+    <div class="last-t ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><img src="images/p9t.png" alt=""></div>
+     <div class="erweima">
+     <img src="images/p9c.jpg" alt="">
+     <img src="images/p9veri.jpg" alt="">
+     </div>
+     <div class="dizhi ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="1s"><img src="images/p9map.png" alt=""></div>
+     <div class="tel ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"><img src="images/phone.png" alt=""></div>
+   
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>	
+<script type="text/javascript" src="js/swiper-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<script>
+	
+  var mySwiper = new Swiper ('.swiper-container', {
+  onInit: function(swiper){ 
+    swiperAnimateCache(swiper); 
+    swiperAnimate(swiper);
+    $('.erweima').addClass('rotate4')
+    console.log(0)
+  }, 
+  onSlideChangeEnd: function(swiper){ 
+    swiperAnimate(swiper); 
+     $('.erweima').removeClass('.rotate4')
+  } 
+  })   
+</script>	
+	
+</body>
+</html>

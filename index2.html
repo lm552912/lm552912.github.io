@@ -1,0 +1,110 @@
+<?php
+header("content-type:text/html;charset=utf-8");
+?>
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<title>自己练习微网站</title>	
+</head>
+<body>
+<div class="box">
+	<div class="warp">
+		<div class="head">
+			<img src="images/logo.png" alt="">
+		</div>
+		<div class="content-1">
+				<div class="swiper-container first swiper-h">
+					   <div class="swiper-wrapper">
+						    <div class="swiper-slide first-1"></div>
+						    <div class="swiper-slide first-2"></div>
+						    <div class="swiper-slide first-3"></div>
+						    <div class="swiper-slide first-4"></div>
+					  </div>
+					  <div class="swiper-pagination"></div>
+	             </div>
+		</div>
+		<div class="content-2">
+			<div class="content-2-1">
+				<a href="gushi.html">
+					 <p>品牌故事</p>
+					 <div class="bt"></div>
+				</a>
+				<a href="rexiao.html">
+					 <p>热销项目</p>
+					 <div class="bt"></div>
+				</a>
+				<a href="peitao.html">
+					 <p>周边配套</p>
+					 <div class="bt"></div>
+				</a>
+			</div>
+			 <div class="content-2-2">
+					<div class="left">
+						<a href="">
+							<p>720看房</p>
+					        <div class="bt"></div>
+						</a>
+						<a href="lianxi.html">
+							<p>联系我们</p>
+					        <div class="bt"></div>
+						</a>
+					</div>
+					<div class="right">
+							<div class="swiper-container swiper-v first">
+								    <div class="swiper-wrapper">
+								        <div class="swiper-slide v-1"></div>
+								        <div class="swiper-slide v-2"></div>
+								        <div class="swiper-slide v-3"></div>
+								        <div class="swiper-slide v-4"></div>
+								    </div>
+					    	
+					                    </div>
+					</div>
+			</div>
+					</div> 
+		
+	</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>	
+<script type="text/javascript" src="js/swiper-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<script>
+	
+	var mySwiper = new Swiper('.swiper-h', {
+	autoplay: 3000,//可选选项，自动滑动
+	pagination : '.swiper-pagination',
+	onInit: function(swiper){    
+    }
+   
+})
+   var swiper = new Swiper('.swiper-v', {
+	autoplay: 5000,//可选选项，自动滑动
+	pagination : '.swiper-pagination',
+	direction:'vertical',
+	loop:true,
+	onInit: function(swiper){    
+    }
+   
+})
+	/*var  Swiper = new Swiper('swiper-v', {
+	  autoplay: 3000,//可选选项，自动滑动
+	  direction:'vertical',
+	  onInit: function(swiper){
+     console.log(1)
+    }
+})*/
+</script>	
+</body>
+</html>
